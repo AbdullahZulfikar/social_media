@@ -1,0 +1,195 @@
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2; /* Light gray background */
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to right, #F64030, #3498db); 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar .links {
+  text-align: center;
+  margin-right: 50px;
+}
+
+.links a {
+  color: #ffffff; /* White text color */
+  text-decoration: none;
+  border: 3px solid transparent; /* Initially transparent border */
+  border-radius: 5px; /* Adds a slight border radius for rounded corners */
+  padding: 8px 15px; /* Adjust padding for button size */
+  margin: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for text color, background color, and border */
+}
+
+.links a:hover {
+  color: #ffffff; /* Change text color on hover to white */
+  background-color: #7E1B37; /* Hover background color */
+  border-color: #7E1B37; /* Hover color for the border */
+}
+
+.navbar .user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.user p {
+  font-size: 15px;
+  margin-right: 10px;
+  color: #ffffff; /* White text color */
+}
+
+.user img {
+  font-size: 15px;
+  border-radius: 50%;
+  border: 3px solid #3498db; /* Blue border for the image */
+  padding: 2px; /* Add padding to the image border */
+}
+
+.user button {
+  font-size: 12px; /* Adjust the font size to make the button smaller */
+  margin-right: 20px;
+  margin-left: 5px; /* Adjust the margin to move the button to the left */
+  color: black; /* Default text color */
+  background-color: white; /* Default background color */
+  border: 1px solid black; /* Add a border for better visibility */
+  border-radius: 15px; /* Make the button round from the corners */
+  padding: 5px 10px; /* Adjust padding to control button size */
+
+  /* Transition for smooth hover effect */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user button:hover {
+  background-color: #7E1B37; /* Change background color on hover to black */
+  color: white; /* Change text color on hover to white */
+}
+
+/* app.css */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+  background: linear-gradient(to right, #F64030, #3498db); /* Background color of the form container */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+.form-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #fff; /* White border for the input fields */
+  border-radius: 5px;
+  background-color: #fff; /* White background for the input fields */
+  color: #333; /* Text color for better readability */
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color on hover */
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right,#3498db, #F64030);  /* Change background color on hover to blue */
+}
+
+
+/* ======================================== */
+.audio-container {
+  position: absolute;
+  bottom: 20em;
+  right: 0;
+  padding: 20px;
+  
+}
+
+.audio {
+  background-color: #E54841; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.audio:hover {
+  background-color: #2c3e50; /* Hover background color */
+}
+
+.audio.playing {
+  background-color: #e74c3c; /* Change color when playing */
+}
+
+.audio.playing:hover {
+  background-color: #c0392b; /* Hover color when playing */
+}
+
+/* =================this is the post data ======================= */
+.Post {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: linear-gradient(to right,#3498db, #F64030);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  padding: 5px;
+  padding-top: 10px;
+  background-color: #aaa; /* Grey background color */
+  border: 2px solid red; /* Border color */
+  border-radius: 8px; /* Border radius for a slight curve */
+  display: inline-block; /* Ensures the box only takes the necessary width */
+}
+
+.author {
+  color: #555;
+}
+
+.post-content {
+  margin-top: 16px;
+  
+  
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+
